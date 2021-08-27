@@ -94,3 +94,14 @@ _A list of my commonly used Git commands_
 | Command | Description |
 | --------| ----------- |
 | `git rebase [branch]` | Set this [branch] to be base for other branch |
+
+### Submodules
+
+| Command | Description |
+| --------| ----------- |
+| `git clone --recursive [URL Git Repo]` | Clone repository that contain git submodule |
+| `git submodule update --init` | Clone all submodule from remote repository |
+| `git submodule add -b [branch] [URL Git Repo]` | Add submodule from remote repository and define [branch]|
+| `git submodule init`| Initialize git submodule |
+| `cd [submodule directory]` | Go to submodule directory |
+| `git submodule deinit -f path/to/submodule` | Remove submodule |
