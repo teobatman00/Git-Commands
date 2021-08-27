@@ -94,7 +94,26 @@ _A list of my commonly used Git commands_
 
 | Command | Description |
 | --------| ----------- |
-| `git rebase [branch]` | Set this [branch] to be base for other branch |
+| `git rebase [target branch]` | Set [target branch] to be base branch for this branch |
+| `git rebase [target branch] [source branch]` | Set [target branch] to be base branch for [source branch] |
+| `git rebase --onto [first branch] [second branch] [...] [last branch]` | Set rebase for multiple branch |
+
+***Example***
+`git rebase --onto master topicA topic`
+
+    o---o---o---o---o  master
+            |            \
+            |             o'--o'--o'  topic
+             \
+              o---o---o---o---o  next
+
+***Will be***
+
+                           H---I---J topicB
+                           /
+                  E---F---G  topicA
+                 /
+    A---B---C---D  master
 
 ### Submodules
 
