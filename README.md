@@ -25,8 +25,9 @@ _A list of my commonly used Git commands_
 | ------- | ----------- |
 | `git status` | Check status |
 | `git add [file-name.txt]` | Add a file to the staging area |
-| `git add path/to/[file-name.txt]` | Add a directory to the staging area |
-| `git add .` | Add all change in branch |
+| `git add path/to/[file-name.txt]` | Add a directory file change to the staging area |
+| `git add path/to/directory` | Add all changes in the directory to the staging area |
+| `git add .` | Add all the changes to the staging area|
 | `git add -A` | Add all new and changed files to the staging area |
 | `git commit -m "[commit message]"` | Commit changes |
 | `git commit -m "[commit message]" -m "[commit message description]"` | Commit changes with description |
